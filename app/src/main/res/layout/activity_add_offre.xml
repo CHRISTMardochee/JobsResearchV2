@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recruteur.AddOffreActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <RelativeLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imgView_userIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorMintDark"
+                android:padding="8dp"
+                android:src="@drawable/secteur"
+                android:tint="@color/white" />
+
+            <Spinner
+                android:id="@+id/add_offre_spinner_secteur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:entries="@array/secteur"
+                android:paddingLeft="20dp"
+                android:textSize="15sp">
+
+            </Spinner>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imgfonction"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorMintDark"
+                android:padding="8dp"
+                android:src="@drawable/noun"
+                android:tint="@color/white" />
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/add_offre_activity_text_fonction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:hint="Fonction"
+                android:paddingLeft="20dp"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imglieu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorMintDark"
+                android:padding="8dp"
+                android:src="@drawable/lieu"
+                android:tint="@color/white" />
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/add_offre_activity_text_lieu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Lieu"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/typeimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorMintDark"
+                android:padding="8dp"
+                android:src="@drawable/img_register"
+                android:tint="@color/white" />
+
+            <Spinner
+                android:id="@+id/add_offre_spinner_contrat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:entries="@array/contrat"
+                android:paddingLeft="20dp"
+                android:textSize="15sp">
+
+            </Spinner>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/imgposte"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorMintDark"
+                android:padding="8dp"
+                android:src="@drawable/ic_action_name"
+                android:tint="@color/white" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/add_offre_activity_text_poste"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:hint="Description du Poste"
+                android:inputType="textAutoCorrect|textAutoComplete|textMultiLine|textLongMessage"
+                android:paddingLeft="20dp"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/imgprofil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorMintDark"
+                android:padding="8dp"
+                android:src="@drawable/profil"
+                android:tint="@color/white" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/add_offre_activity_text_profil"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:hint="Description du Profil"
+                android:inputType="textAutoCorrect|textAutoComplete|textMultiLine|textLongMessage"
+                android:paddingLeft="20dp"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/offre_activity_button_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout7"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_radius_primary_color"
+            style="?android:attr/borderlessButtonStyle"
+            android:fontFamily="sans-serif-medium"
+            android:text="Enregistrez une offre"
+            android:textColor="@color/white" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
